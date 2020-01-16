@@ -139,12 +139,14 @@ void CCheckAPIDlg::OnBnClickedOk()
 		INIWriteString(L"API", L"StartPage", L"TRUE", strFilePath);
 	}
 	else{
+		//체크 안되었을 경우
 		INIWriteString(L"API", L"StartPage", L"FALSE", strFilePath);
 	}
 	if (m_chk_EndDoc.GetCheck() == 1){
 		INIWriteString(L"API", L"EndDoc", L"TRUE", strFilePath);
 	}
 	else{
+		//체크 안되었을 경우
 		INIWriteString(L"API", L"EndDoc", L"FALSE", strFilePath);
 	}
 	if (m_chk_closehandle.GetCheck() == 1){
